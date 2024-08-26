@@ -1,0 +1,369 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: black;
+    color: white;
+    
+}
+.logo h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    margin: 0;
+}
+
+
+/* Navigation bar styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+}
+
+.logo h2 {
+    color: #db0000;
+    margin: 0;
+    font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.form-control {
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+}
+
+.btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #db0000;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #831010;
+}
+
+.login {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 8px 16px;
+    background-color: #db0000;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.login:hover {
+    background-color: #831010;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .d-flex {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .form-control {
+        flex-grow: 1;
+        margin-right: 10px;
+    }
+
+    .login {
+        margin-top: 10px;
+        align-self: flex-end;
+    }
+}
+
+/* bg image */
+
+body {
+    
+    background-image: url('/pics/cozy-living-room-with-old-fashioned-bookshelf-comfortable-sofa-generated-by-artificial-intelligence.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    min-height: 100vh;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.688); /* Black overlay with 50% opacity */
+    z-index: 1;
+}
+body > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        background-size: contain; 
+        background-position: center top; 
+        background-image: none;
+         /* add image then */
+    }
+}
+
+.centered-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+
+.centered-form input[type="email"] {
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    margin-right: 10px;
+    font-size: 16px;
+    width: 600px;
+    max-width: 100%;
+    background-color: rgba(255, 255, 255, 0.242);
+    border: 2px solid black;
+    
+    
+}
+
+.centered-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.centered-form button:hover {
+    background-color: darkred;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        background-size: contain;
+        background-position: center top;
+    }
+
+    .centered-form {
+        width: 90%;
+        
+    }
+
+    .centered-form input[type="email"] {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .centered-form button {
+        width: 100%;
+    }
+
+   
+    }
+    
+  
+
+.text_label{
+    margin-top: 30%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.btn-get-started {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center; /* Align text and icon vertically */
+}
+
+.btn-get-started ion-icon {
+    margin-left: 10px; /* Space between text and icon */
+    font-size: 20px; /* Size of the icon */
+}
+
+
+input[type="email"]::placeholder {
+    color: white;
+    opacity: 1; /* Ensures the placeholder color is not faded */
+    font-size: 22px;
+}
+
+
+
+/* Basic styling for the section */
+.registration {
+    display: none; /* Hidden by default */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Optional: dark background to enhance visibility */
+    color: white; /* Text color */
+    
+    
+}
+.welcome_text{
+    margin-top: -10%;
+}
+
+.welcome_text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.welcome_text h2 {
+    font-size: 24px;
+}
+
+
+input[type="password"]::placeholder {
+    color: white;
+    opacity: 1; /* Ensures the placeholder color is not faded */
+    font-size: 22px;
+    margin-top: 10%;
+}
+
+.centered-form input[type="password"] {
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    margin-right: 10px;
+    font-size: 16px;
+    width: 600px;
+    max-width: 100%;
+    background-color: rgba(255, 255, 255, 0.242);
+    border: 2px solid black;
+    
+    
+}
+
+.centered-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.centered-form button:hover {
+    background-color: darkred;
+}
+
+.centered-form form a{
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 768px) {
+    body {
+        background-size: contain;
+        background-position: center top;
+    }
+
+    .centered-form {
+        width: 90%;
+    }
+
+    .centered-form input[type="email"],
+    .centered-form input[type="password"] {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .centered-form button,
+    .btn-get-started {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .text_label {
+        margin-top: 50%;
+        font-size: 80%;
+    }
+
+    .welcome_text h1 {
+        font-size: 32px;
+    }
+
+    .welcome_text h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text_label {
+        margin-top: 25%;
+        font-size: 60%;
+    }
+
+    .welcome_text h1 {
+        font-size: 28px;
+    }
+
+    .welcome_text h2 {
+        font-size: 16px;
+    }
+
+    .welcome_text{
+        margin-top: -50%;
+        font-size: 60%;
+    }
+}
